@@ -8,7 +8,7 @@ const App = ()=>{
   const [updateUI,setUpdateUI] = useState(false);
   const [updateId,setUpdateId]= useState(null);
   useEffect(()=>{
-    axios.get(`${baseURL}/get`)
+    axios.get(`${baseURL}get`)
     .then((res)=>{
       console.log(res.data);
       setTask(res.data);
@@ -16,7 +16,7 @@ const App = ()=>{
   },[updateUI]);
   
   const addTask = ()=>{
-    axios.post(`${baseURL}/save`,{task:input}).then((res)=>{
+    axios.post(`${baseURL}save`,{task:input}).then((res)=>{
       console.log(res.data);
       setInput("");
       setUpdateUI((prevState)=>!prevState);
@@ -28,7 +28,7 @@ const App = ()=>{
     setUpdateId(id);
   }
   const updateTask =()=>{
-    axios.put(`${baseURL}/update/${updateId}`,{task:input}).then((res)=>{
+    axios.put(`${baseURL}update/${updateId}`,{task:input}).then((res)=>{
     console.log(res.data);
     setUpdateUI((prevState)=>!prevState);
     setUpdateId(null);
