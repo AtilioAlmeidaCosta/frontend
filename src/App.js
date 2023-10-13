@@ -10,26 +10,25 @@ const App = ()=>{
   useEffect(()=>{
     axios.get(`${baseURL}get`)
     .then((res)=>{
-      console.log(res.data);
+      
       setTask(res.data);
     })
   },[updateUI]);
   
   const addTask = ()=>{
     axios.post(`${baseURL}save`,{task:input}).then((res)=>{
-      console.log(res.data);
+      
       setInput("");
       setUpdateUI((prevState)=>!prevState);
     });
   }
   const updateMode = (id,text)=>{
-    console.log(text);
     setInput(text);
     setUpdateId(id);
   }
   const updateTask =()=>{
     axios.put(`${baseURL}update/${updateId}`,{task:input}).then((res)=>{
-    console.log(res.data);
+    
     setUpdateUI((prevState)=>!prevState);
     setUpdateId(null);
     setInput("");
