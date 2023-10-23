@@ -13,8 +13,7 @@ const App = ()=>{
   useEffect(()=>{
     axios.get(`${baseURL}get`)
     .then((res)=>{
-      
-      setTask(res.data);
+     setTask(res.data);
     })
   },[updateUI]);
   
@@ -99,13 +98,26 @@ const App = ()=>{
     <input type="text" value={input} onChange={(e)=>setInput(e.target.value)} />
     <button type="submit" onClick={updateId ? updateTask: addTask}>{updateId?"Atualizar Tarefa" :"Adicionar Tarefa"}</button>
     </div>
-    <div className="table">
-      <List 
-      task={task}
-      setUpdateUI={setUpdateUI}
-      updateMode={updateMode}
-      /> 
-    </div>  
+    
+  <table border={2} className="darkTable">
+        <thead>
+            <tr>
+                <th>Tarefa</th>
+                <th>Editar</th>
+                <th>Deletar</th>
+            </tr>
+        </thead>
+        <tbody>
+            {task.map(task => (
+            <List key={task._id}
+            id={task._id}
+            task={task.task}
+            setUpdateUI={setUpdateUI}
+            updateMode={updateMode}
+            />
+            ))}
+      </tbody>
+    </table>
     </section>
     <section className="content">
       <div className="guide">
