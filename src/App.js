@@ -48,17 +48,14 @@ const App = ()=>{
       case 'Atilio':
         window.open('https://www.linkedin.com/in/atilio-almeida-costa/', "_blank", "noreferrer");
         break;
-      case 'João':
-        window.open('https://www.linkedin.com/in/', "_blank", "noreferrer");
-        break;
       case 'Julia':
-        window.open('https://www.linkedin.com/in/', "_blank", "noreferrer");
+        window.open('https://www.linkedin.com/in/julia-lemos-913a24204', "_blank", "noreferrer");
         break;
       case 'Leandro':
-        window.open('https://www.linkedin.com/in/', "_blank", "noreferrer");
+        window.open('https://www.linkedin.com/in/leandro-f%C3%A9lix-nunes-6475a1237/', "_blank", "noreferrer");
         break;
       case 'Pedro':
-        window.open('https://www.linkedin.com/in/', "_blank", "noreferrer");
+        window.open('http://www.linkedin.com/in/pedro-xavier-9a2884297', "_blank", "noreferrer");
         break;
       default:
         window.open('https://www.linkedin.com/in/', "_blank", "noreferrer");
@@ -69,17 +66,14 @@ const App = ()=>{
       case 'Atilio':
         window.open('https://github.com/AtilioAlmeidaCosta', "_blank", "noreferrer");  
         break;
-      case 'João':
-        window.open('https://github.com/', "_blank", "noreferrer");    
-        break;
       case 'Julia':
-        window.open('https://github.com/', "_blank", "noreferrer");    
+        window.open('https://github.com/JuliaLemos19', "_blank", "noreferrer");    
         break;
       case 'Leandro':
-        window.open('https://github.com/', "_blank", "noreferrer");    
+        window.open('https://github.com/LeandroHawk', "_blank", "noreferrer");    
         break;
       case 'Pedro':
-        window.open('https://github.com/', "_blank", "noreferrer");    
+        window.open('https://github.com/PedroXav', "_blank", "noreferrer");    
         break;
       case 'Frontend':
         window.open('https://github.com/', "_blank", "noreferrer");    
@@ -126,9 +120,9 @@ const App = ()=>{
         <li>Vídeo de referênia original:
         <FaYoutubeSquare className="video-icon" onClick={()=>redirectVideo('Original')}/>
         </li>
-        <li>Vídeo explicativo do nosso projeto:
+{/*         <li>Vídeo explicativo do nosso projeto:
         <FaYoutubeSquare className="video-icon" onClick={()=>redirectVideo('Nosso')}/>
-        </li>
+        </li> */}
         <li>Repositórios
           <ul>
             <li>Frontend: <BiLogoGithub className="profile-icon"  onClick={()=>redirectGithub('Frontend')}></BiLogoGithub></li>
@@ -143,13 +137,13 @@ const App = ()=>{
       <div className="autores">
       <div className="autor">
         <h3>Atilio</h3>
+        <p>e-mail: <br></br>atilio.almeida.costa@gmail.com</p>
       <BiLogoLinkedin className="profile-icon"  onClick={()=>redirectLinkedin('Atilio')}></BiLogoLinkedin>
       <BiLogoGithub className="profile-icon"  onClick={()=>redirectGithub('Atilio')}></BiLogoGithub>
       </div>
       <div className="autor">
         <h3>João</h3>
-      <BiLogoLinkedin className="profile-icon"  onClick={()=>redirectLinkedin('Atilio')}></BiLogoLinkedin>
-      <BiLogoGithub className="profile-icon"  onClick={()=>redirectGithub('Atilio')}></BiLogoGithub>
+        <p>e-mail: Jm.teles.silva@gmail.com</p>
       </div>
       <div className="autor">
         <h3>Julia</h3>
@@ -163,6 +157,8 @@ const App = ()=>{
       </div>
       <div className="autor">
         <h3>Pedro</h3>
+        <p>e-mail: pxo2005@gmail.com
+        </p>
       <BiLogoLinkedin className="profile-icon"  onClick={()=>redirectLinkedin('Atilio')}></BiLogoLinkedin>
       <BiLogoGithub className="profile-icon"  onClick={()=>redirectGithub('Atilio')}></BiLogoGithub>
       </div>

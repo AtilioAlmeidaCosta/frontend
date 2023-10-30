@@ -7,90 +7,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background: linear-gradient(180deg, #ca893e 0%, #d43808 100%);
 }
-.input_holder{
-  display: flex;
-}
-input{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-shrink: 0;
-  border-radius: 20px;
-  width: 70%;
-  height: 40px;
-  padding-left: 2em;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 29px;
-  border: 1px solid #d7d3d3;
-  border-radius: 1vw;
-}
-button{
-  border-radius: 35px;
-  display: flex;
-  width: 200px;
-  height: 25px;
-  padding: 20px;
-  justify-content: center;
-  align-items: center;
-  flex-shrink: 0; 
-  margin-left: 1%;
-  font-size: 20px;
-  line-height: 29px;
-  border-radius: 17px;
-  border: none;
-  cursor: pointer; 
-}
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-.icon{
-  cursor: pointer;
-}
-.crud{
-  display: flex;
-  padding: auto;
-  margin: 5%;
-  flex-direction: column;
-}
-.content{
-  display: flex;
-  margin: 5%;
-}
-.profiles{
-  border-radius: 30px;
-  border: 5px solid black;
-  color: antiquewhite;
-  width: 49%;
-  margin-left: 1%;
-
-}
-.title{
-  text-align: center;
-  color: #FFF;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  font-family: Roboto;
-  font-size: 46px;
-  font-style: normal;
-  font-weight: 800;
-  line-height: normal;
-}
-.autores{
-  display: flex;
-  justify-content: space-around;
-}
-.guide{
-  border-radius: 30px;
-  border: 5px solid black;
-  color: antiquewhite;
-  width: 49%;
-  margin-right: 1%;
-}
-.profile-icon{
-  width: 24px;
-  height: 24px;
-}
 table.darkTable {
   margin-top: 2%;
   font-family: "Arial Black", Gadget, sans-serif;
@@ -140,3 +56,233 @@ table.darkTable tfoot {
 table.darkTable tfoot td {
   font-size: 12px;
 }
+.input_holder{
+  display: flex;
+}
+input{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 20px;
+  width: 70%;
+  height: 55px;
+  padding-left: 2em;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 29px;
+  border: 1px solid #d7d3d3;
+  border-radius: 1vw;
+}
+button{
+  border-radius: 35px;
+  display: flex;
+  width: 30%;
+  height: 55px;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0; 
+  margin-left: 1%;
+  font-size: 20px;
+  line-height: 29px;
+  border-radius: 17px;
+  border: none;
+  cursor: pointer; 
+}
+.icon{
+  cursor: pointer;
+}
+.crud{
+  display: flex;
+  padding: auto;
+  margin: 5%;
+  flex-direction: column;
+  width: 100%;
+}
+main{
+  width: 100%;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* default styles here for older browsers. 
+       I tend to go for a 600px - 960px width max but using percentages
+    */
+    @media only screen and (max-device-width: 480px) {
+      /* styles for mobile browsers smaller than 480px; (iPhone) */
+
+      input{
+        width: 70%;
+        height: 55px;
+      }
+      button{
+        width: 30%;
+        height: 55px;
+      }
+      .content{
+        display: flex;
+        margin: 5%;
+        flex-direction: column; 
+        width: 100%;
+      }
+      .profiles{
+        border-radius: 30px;
+        border: 5px solid black;
+        color: antiquewhite;
+        width: 100%;
+        margin-left: 1%;
+        flex-direction: column;
+        display: flex;
+      }   
+      .autores{
+        flex-direction: column;
+        align-items: center;
+      }   
+      .author{
+        flex-direction: row;
+      }
+   }
+   @media only screen and (max-device-width: 959px ){
+      /* default iPad screens */
+      input{
+        width: 65%;
+
+      }
+      button{
+        width: 28%;
+      }
+      .content{
+        display: flex;
+        margin: 5%;
+        flex-direction: column; 
+        width: 100%;
+      }
+      .profiles{
+        border-radius: 30px;
+        border: 5px solid black;
+        color: antiquewhite;
+        width: 90%;
+        padding: 2%;
+        flex-direction: column;
+        display: flex;
+      }   
+      .autores{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }   
+      .author{
+        flex-direction: column;
+        margin: 1%;
+      }
+      .guide{
+        border-radius: 30px;
+        border: 5px solid black;
+        color: antiquewhite;
+        width: 90%;
+        padding: 2%;
+      }
+      .profile-icon{
+        width: 24px;
+        height: 24px;
+      }   
+   }  
+  @media only screen and (min-width: 960px) {
+      /* styles for browsers larger than 960px; */
+      input{
+        width: 65%;
+      }
+      button{
+        width: 28%;
+      }
+      .content{
+        display: flex;
+        margin-left: 5%;
+        margin-top: 2%;
+      }
+      .profiles{
+        border-radius: 30px;
+        border: 5px solid black;
+        color: antiquewhite;
+        width: 90%;
+        padding: 2%;
+        margin-left: 1%;
+      
+      }
+      .autores{
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .guide{
+        border-radius: 30px;
+        border: 5px solid black;
+        color: antiquewhite;
+        width: 30%;
+        margin-right: 1%;
+      }
+      .profile-icon{
+        width: 24px;
+        height: 24px;
+      }
+      
+  }
+  @media only screen and (min-width: 1366px) {
+
+    input{
+      width: 70%;
+      height: 40px;      
+    }
+    button{
+      width: 200px;
+      height: 25px;
+    }
+    .crud{
+      display: flex;
+      padding: auto;
+      margin: 5%;
+      flex-direction: column;
+    }
+    .content{
+      display: flex;
+      margin: 5%;
+    }
+    .profiles{
+      border-radius: 30px;
+      border: 5px solid black;
+      color: antiquewhite;
+      width: 49%;
+      margin-left: 1%;
+    
+    }
+    .title{
+      text-align: center;
+      color: #FFF;
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      font-family: Roboto;
+      font-size: 46px;
+      font-style: normal;
+      font-weight: 800;
+      line-height: normal;
+    }
+    .autores{
+      display: flex;
+      justify-content: space-around;
+    }
+    .guide{
+      border-radius: 30px;
+      border: 5px solid black;
+      color: antiquewhite;
+      width: 49%;
+      margin-right: 1%;
+    }
+    .profile-icon{
+      width: 24px;
+      height: 24px;
+    }
+    table.darkTable{
+      width: 90%;
+    }
+  }
