@@ -147,20 +147,20 @@ const App = ()=>{
       </div>
       <div className="autor">
         <h3>Julia</h3>
-      <BiLogoLinkedin className="profile-icon"  onClick={()=>redirectLinkedin('Atilio')}></BiLogoLinkedin>
-      <BiLogoGithub className="profile-icon"  onClick={()=>redirectGithub('Atilio')}></BiLogoGithub>
+      <BiLogoLinkedin className="profile-icon"  onClick={()=>redirectLinkedin('Julia')}></BiLogoLinkedin>
+      <BiLogoGithub className="profile-icon"  onClick={()=>redirectGithub('Julia')}></BiLogoGithub>
       </div>
       <div className="autor">
         <h3>Leandro</h3>
-      <BiLogoLinkedin className="profile-icon"  onClick={()=>redirectLinkedin('Atilio')}></BiLogoLinkedin>
-      <BiLogoGithub className="profile-icon"  onClick={()=>redirectGithub('Atilio')}></BiLogoGithub>
+      <BiLogoLinkedin className="profile-icon"  onClick={()=>redirectLinkedin('Leandro')}></BiLogoLinkedin>
+      <BiLogoGithub className="profile-icon"  onClick={()=>redirectGithub('Leandro')}></BiLogoGithub>
       </div>
       <div className="autor">
         <h3>Pedro</h3>
         <p>e-mail: pxo2005@gmail.com
         </p>
-      <BiLogoLinkedin className="profile-icon"  onClick={()=>redirectLinkedin('Atilio')}></BiLogoLinkedin>
-      <BiLogoGithub className="profile-icon"  onClick={()=>redirectGithub('Atilio')}></BiLogoGithub>
+      <BiLogoLinkedin className="profile-icon"  onClick={()=>redirectLinkedin('Pedro')}></BiLogoLinkedin>
+      <BiLogoGithub className="profile-icon"  onClick={()=>redirectGithub('Pedro')}></BiLogoGithub>
       </div>
       </div>
     </div>
