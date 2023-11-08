@@ -76,10 +76,10 @@ const App = ()=>{
         window.open('https://github.com/PedroXav', "_blank", "noreferrer");    
         break;
       case 'Frontend':
-        window.open('https://github.com/', "_blank", "noreferrer");    
+        window.open('https://github.com/AtilioAlmeidaCosta/frontend', "_blank", "noreferrer");    
         break;
       case 'Backend':
-        window.open('https://github.com/', "_blank", "noreferrer");    
+        window.open('https://github.com/AtilioAlmeidaCosta/backend', "_blank", "noreferrer");    
         break
       default:
         window.open('https://github.com/', "_blank", "noreferrer");    
